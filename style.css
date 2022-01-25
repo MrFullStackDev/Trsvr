@@ -18,18 +18,18 @@ button,
 label,
 input,
 p {
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 h2 {
-  font-size: 4.8rem;
+  font-size: 3.6rem;
 }
 h3 {
-  font-size: 3rem;
+  font-size: 2.2rem;
   font-weight: 400;
 }
 h4,
 h5 {
-  font-size: 2.8rem;
+  font-size: 2rem;
 }
 a {
   color: white;
@@ -54,6 +54,9 @@ button:hover {
 .main-head {
   background-color: #131c27;
   color: white;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
 }
 nav {
   display: flex;
@@ -190,6 +193,10 @@ p {
 
 #contact {
   min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("/Assets/images/contact-mountain.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -200,6 +207,7 @@ p {
   width: 60%;
   color: white;
   border-radius: 20px;
+  flex-wrap: wrap;
 }
 
 .form-head {
@@ -229,6 +237,31 @@ p {
   padding: 1rem 3rem;
 }
 
+footer {
+  color: white;
+  background: rgba(19, 28, 39, 1);
+}
+
+.footer-wrapper {
+  display: flex;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  min-height: 10vh;
+}
+
+footer h5 {
+  flex: 1 1 40rem;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+  flex: 1 1 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
 @keyframes cloudAnimation {
   from {
     transform: translate(10%, -10%);
@@ -265,5 +298,14 @@ p {
     background: rgba(19, 28, 39, 0.9);
     -webkit-text-fill-color: white;
     padding: 1rem;
+  }
+  .form-wrapper {
+    width: 80%;
+  }
+  footer {
+    text-align: center;
+  }
+  footer h5 {
+    padding: 3rem;
   }
 }
