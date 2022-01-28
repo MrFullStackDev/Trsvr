@@ -83,7 +83,7 @@ nav ul {
 
 .hero {
   min-height: 90vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+  background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
     url(/Assets/images/landing-page.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -136,7 +136,7 @@ nav ul {
   top: 20%;
   z-index: -1;
   opacity: 0.5;
-  animation: cloudAnimation 4s infinite ease-in-out;
+  animation: cloudAnimation 4s infinite alternate ease-in-out;
 }
 
 /*Benfits Section*/
@@ -173,9 +173,6 @@ nav ul {
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 10px 10px rgba(0, 0, 0, 0.1);
 }
 
-.cards img {
-  height: 100px;
-}
 .card img {
   max-width: 15%;
   margin: 2rem;
@@ -189,7 +186,7 @@ p {
   background-color: #27394e;
 }
 
-/*Footer Section*/
+/*Contact Section*/
 
 #contact {
   min-height: 100vh;
@@ -207,7 +204,6 @@ p {
   width: 60%;
   color: white;
   border-radius: 20px;
-  flex-wrap: wrap;
 }
 
 .form-head {
@@ -249,6 +245,7 @@ footer {
   margin: auto;
   align-items: center;
   min-height: 10vh;
+  flex-wrap: wrap;
 }
 
 footer h5 {
@@ -269,6 +266,14 @@ footer ul {
   to {
     transform: translate(0%, 0%);
   }
+}
+
+/* Button focus to make website accessible */
+
+button:focus {
+  background: #2c3f57;
+  outline-style: solid;
+  outline-color: cornflowerblue;
 }
 
 /* Mobile Mediaquery */
